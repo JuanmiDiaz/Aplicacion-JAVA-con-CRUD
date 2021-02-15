@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration:none;
+    
+}
+
+/*reseteo de propiedades html*/
+h1,h3,h4,p{
+    margin: 0px;
+    padding: 0.5em;
+}
+a{
+	text-decoration:none;
+	color:black;		
+}
+.formu a {
+	    color: #DB6C8D;
+	
+}
+
+.h1,h3,h4,p:first-letter {
+    text-transform: uppercase;
+}
+
+.rosa{
+    color: #DB6C8D;
+}
+
+.container{
+    font-family: "Righteous",cursive;
+    width: 90%;
+    margin: 20px auto;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-decoration:none;
+}
+
+footer{
+    align-items: center;
+    display: flex;
+    text-decoration:none;
+    background-color: #F5F4B0;
+    padding-left:40%;
+    
+}
+
+ nav a{
+    text-decoration:none;
+    color:  #DB6C8D;      
+    }
+    
+  
+.formu{
+	text-align:center;
+	padding:5%;
+	color:  #DB6C8D;
+}
+
+
+.menu_item{
+    display: none;
+    padding: 0.5em;
+}
+
+main{
+    background-color: #F5F4B0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+main section{
+    width: 100%;
+}
+
+section.main_text{
+    color:  #DB6C8D;
+    font-weight: bolder;
+    padding: 0.5em;
+}
+
+section.images{
+    display: flex;
+    flex-wrap: wrap;  /*para que me lo distribulla en filas*/
+}
+
+section.images img{
+    height: 100px;
+    width: 25%;
+}
+.hidden{
+    display: none;
+}
+
+.cajaregalo{
+-moz-box-shadow: 6px 6px 11px 0px rgba(219,108,141,1);
+box-shadow: 6px 6px 11px 0px rgba(219,108,141,1);
+padding-left:5%;
+}
+
+
+
+
+
+
+/*Formulario*/
+.formuformu{
+    max-width: 500px;
+    margin:auto;
+}
+.formuformu2{
+    max-width: 300px;
+    margin:auto;
+}
+.inscripcion{
+    background-color:#F5F4B0;
+    box-shadow: 0px 0px 2px 2px grey;
+    padding: 10px;
+}
+.inscripcion .boton{
+    margin-top: 20px;
+}
+.row{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-content: center;
+    align-items: center;
+}
+.col{
+    width: 100%;
+}
+.boton{
+    padding: 10px;
+    background-color: #DB6C8D;
+    width: 100%;
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    font-family: "Righteous",cursive;
+    
+}
+.boton:hover{
+    background-color: #a85e75;
+}
+
+
+.datos{
+    margin-top: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:576px){
+nav{
+        display: flex; /*que pase a ser de bloque a flex, para que salgan en horizontal*/
+    
+    }
+    
+.menu_item{
+    display: inline-block;
+}
+
+.icon{
+    display: none;
+}
+
+.novedades{
+    display: flex;
+}
+
+
+
+/*todos los hijos directos de novedades*/
+.novedades > *{  
+    width: 25%;
+}
+
+.formulario > *{  
+    width: 50%;
+}
+.regalos > *{  
+    width: 25%;
+    width:80%;
+    
+    
+}
+
+
+section.main_text,section.images{
+    width: 50%;
+}
+
+section.images img{
+    width: 50%;
+    height: 25%;
+}
+
+}
+
+@media screen and (min-width:992px){
+    .hidden{
+        display: block;
+    }
+    
+    .formulario{
+	margin-left:40%;
+}
+    .regalos{
+	margin-left:20%;
+}
+
+    section.images{
+        order:1;
+    }
+    section.main_text{
+        order:2;
+    }
+    section.images img{
+        width: 33%;
+        height: 33%;
+    }
+}
